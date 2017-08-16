@@ -1,0 +1,20 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $dark-grey;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $light-grey;
+  font-family: $headers-font-stack;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.6rem;
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+  font-size: 2rem;
+  }
+}

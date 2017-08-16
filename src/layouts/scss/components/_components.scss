@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains all components (buttons, bars).
+// -----------------------------------------------------------------------------
+
+
+.language {
+  margin-bottom: 4rem;
+}
+
+.bar {
+  width: 80px;
+  margin: 0;
+  border: none;
+  background-color: $light-grey;
+  height: 1px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bar-wide {
+  width: 100%;
+  margin: 0;
+  border: none;
+  background-color: $light-grey;
+  height: 1px;
+}
+.container-side {
+  max-width: $max-width;
+}
+
+.btn {
+  background-color: transparent;
+  font-family: $text-font-stack;
+  padding: 0.7rem 2.5rem;
+  border: 1px solid $dark-grey;
+  transition: all 0.2s ease-in-out 0.1s;
+  &:hover {
+    cursor: pointer;
+    background-color: $dark-grey;
+    color: $light-grey;
+  }
+}
+
+.btn-works {
+  background-color: transparent;
+  font-family: $text-font-stack;
+  padding: 0.5rem 2rem;
+  border: 1px solid $dark-grey;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out 0.1s;
+  margin-left: 1rem;
+  &:hover {
+    cursor: pointer;
+    background-color: $dark-grey;
+    color: $light-grey;
+  }
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    padding: 0.5rem 0.8rem;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+
+
+.nav-works-header {
+  float: left;
+  margin:-5px 0;
+  @media screen and (max-width: map-get($breakpoints, medium)) {
+    float: none;
+    margin-bottom: 1rem;
+  }
+}
+
+.nav-btns {
+  display: block;
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    float: right;
+  }
+}

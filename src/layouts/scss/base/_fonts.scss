@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Montserrat:400,600,800');
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Inconsolata', monospace !default;
+
+/// Secondary font family
+/// @type List
+$headers-font-stack: 'Montserrat', sans-serif !default;

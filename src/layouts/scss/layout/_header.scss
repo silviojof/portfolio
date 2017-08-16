@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+
+.root {
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    margin-left: 20rem;
+  }
+}
+
+
+
+.main-header {
+  position: static;
+  display: block;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  .caricature {
+    max-width: 5rem;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .header-text {
+    text-align: center;
+    p {
+      margin: 0;
+    }
+    .link {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .main-nav, .social-media {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+      margin-top: 4rem;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    position: fixed;
+    width: 20rem;
+    top: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+    border-right: 1px solid rgb(211, 211, 211);
+    border-bottom: none;
+    margin-bottom: 0;
+    .caricature {
+      max-width: 8rem;
+      margin-left: 0;
+    }
+    .header-text {
+      text-align: left;
+      .link {
+        margin-left: 0;
+      }
+      h1 {
+        margin-top: 4rem;
+      }
+    }
+
+  }
+
+}
+
+.link {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  &:after {
+    content: '';
+    background-color: $light-grey;
+    display: inline-block;
+    width: 100%;
+    height: 0.35rem;
+    position: absolute;
+    bottom: -0rem;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s ease-in-out 0.1s;
+  }
+  text-decoration: none;
+  &:focus {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+    &:after {
+      height: 1.7rem;
+    }
+  }
+}
