@@ -20,7 +20,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
               tags
               image {
                 childImageSharp {
-                  responsiveResolution(width: 283) {
+                  responsiveResolution(width: 500) {
                     src,
                     srcSet
                   }
@@ -38,14 +38,17 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     }
 
     result.data.allFile.edges
-    .forEach(({ node }) => {
+    .forEach(({ node }, index) => {
       const path = node.relativePath.replace(/\/.*/g, '')
 
       createPage({
-        path: `/projects/${path}`,
+        path: `/works/${path}`,
         component: workPostTemplate,
         context: {
-          query: `${path}/index.md`
+          query: `${path}/index.md`,
+          prev: index === 0 ? result.data.allFile.edges[result.data.allFile.edges.length - 1].node : result.data.allFile.edges[index - 1].node,
+          next: index === result.data.allFile.edges.length - 1 ? result.data.allFile.edges[0].node : result.data.allFile.edges[index + 1].node,
+          index
         }
       });
     });

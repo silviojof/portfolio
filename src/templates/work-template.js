@@ -4,15 +4,21 @@ import { Container, Row, Col, Visible, Hidden, ScreenClassRender } from 'react-g
 import WorkNav from '../components/workNav'
 
 export default function Template({
-  data
+  data, pathContext
 }) {
   const post = data.file.childMarkdownRemark
+  //console.log(pathContext)
   return (
     <Container>
-      <WorkNav />
+      <WorkNav navigation={pathContext} show="true" />
       <Helmet title={`Work - ${post.frontmatter.title}`} />
       <Row className="work-box">
         <Col xs={12}>
+          <img
+            src={post.frontmatter.image.childImageSharp.responsiveResolution.src}
+            srcSet={post.frontmatter.image.childImageSharp.responsiveResolution.srcSet}
+            alt="a description"
+          />
           <h4>{post.frontmatter.title}</h4>
           <div className="work-box-content" dangerouslySetInnerHTML={{ __html: post.html }} />
           <h4>Related Services</h4>
@@ -33,11 +39,7 @@ export default function Template({
           </ul>
           <h4>Live Project</h4>
           <p><a href={post.frontmatter.live} target="_blank">{post.frontmatter.live.replace(/(^\w+:|^)\/\//, '')}</a></p>
-          <img
-            src={post.frontmatter.image.childImageSharp.responsiveResolution.src}
-            srcSet={post.frontmatter.image.childImageSharp.responsiveResolution.srcSet}
-            alt="a description"
-          />
+
         </Col>
       </Row>
     </Container>

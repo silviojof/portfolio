@@ -13,14 +13,14 @@ export default function Works({
     <Container>
       <Row>
         <Col xs={12}>
-        <WorkNav />
+        <WorkNav show="false" />
         <Row>
         {posts
           .map(({ node: post }, index) => {
             return (
               <Col xs={12} md={6} lg={4} key={index} className="works-link">
                 <div className="works-img">
-                  <Link to={'/projects/' + post.relativePath.replace(/\/.*/g, '')}>
+                  <Link to={'/works/' + post.relativePath.replace(/\/.*/g, '')}>
                     <img
                       src={post.childMarkdownRemark.frontmatter.image.childImageSharp.responsiveResolution.src}
                       srcSet={post.childMarkdownRemark.frontmatter.image.childImageSharp.responsiveResolution.srcSet}

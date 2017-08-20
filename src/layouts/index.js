@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
-import Men from '../../men.svg'
+import Men from '../../portrait.svg'
 import Nav from '../components/mainNav'
 import { Container, Row, Col, Visible, Hidden, ScreenClassRender } from 'react-grid-system';
 
@@ -46,6 +46,7 @@ const TemplateWrapper = ({
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
+  route: PropTypes.object
 }
 
 export default TemplateWrapper

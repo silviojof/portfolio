@@ -53,7 +53,7 @@
     border-bottom: none;
     margin-bottom: 0;
     .caricature {
-      max-width: 8rem;
+      max-width: 12rem;
       margin-left: 0;
     }
     .header-text {
@@ -93,6 +93,11 @@
   }
   &:hover {
     text-decoration: none;
+    &:after {
+      height: 1.7rem;
+    }
+  }
+  &.active {
     &:after {
       height: 1.7rem;
     }
