@@ -1,6 +1,7 @@
 ---
 title: "TWM"
 image: "images/twm.jpg"
+coverimage: "images/second.jpg"
 tags: ["HTML", "CSS", "PHP", "MySql", "SAAS"]
 related: ["UX", "UI", "Development"]
 live: "http://www.trustworthymusic.com"

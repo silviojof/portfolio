@@ -56,7 +56,8 @@
   font-size: 14px;
   transition: all 0.2s ease-in-out 0.1s;
   margin-left: 1rem;
-  &:hover {
+  &:hover, &:active {
+    text-decoration: none;
     cursor: pointer;
     background-color: $dark-grey;
     color: $light-grey;

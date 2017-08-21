@@ -1,6 +1,7 @@
 ---
 title: "Blue Plate Productions"
 image: "images/blueplate.jpg"
+coverimage: "images/second.jpg"
 tags: ["HTML", "CSS", "PHP", "MySql", "SAAS"]
 related: ["UX", "UI", "Development"]
 live: "http://www.blueplate.ca"

@@ -23,6 +23,12 @@ const Header = () => (
   </div>
 )
 
+const Footer = () => (
+  <div className="footer">
+    <p>&copy; Silvio Oliveira. This site was built with <Link to="https://www.gatsbyjs.org/">GatsbyJS</Link>. Look at the <Link to="https://www.github.com/silviojof/porfolio">source code</Link> to see the Javascript and React that actually build the static website.</p>
+  </div>
+)
+
 const TemplateWrapper = ({
   children
 }) => (
@@ -41,6 +47,7 @@ const TemplateWrapper = ({
           {children()}
         </Row>
       </Container>
+      <Footer />
     </div>
   )
 

@@ -1,6 +1,7 @@
 ---
 title: "Creep.ee"
 image: "images/creepee.jpg"
+coverimage: "images/second.jpg"
 tags: ["HTML", "CSS", "PHP", "MySql", "SAAS"]
 related: ["UX", "UI", "Development"]
 live: "http://www.creep.ee"

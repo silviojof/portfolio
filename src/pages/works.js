@@ -22,8 +22,8 @@ export default function Works({
                 <div className="works-img">
                   <Link to={'/works/' + post.relativePath.replace(/\/.*/g, '')}>
                     <img
-                      src={post.childMarkdownRemark.frontmatter.image.childImageSharp.responsiveResolution.src}
-                      srcSet={post.childMarkdownRemark.frontmatter.image.childImageSharp.responsiveResolution.srcSet}
+                      src={post.childMarkdownRemark.frontmatter.coverimage.childImageSharp.responsiveResolution.src}
+                      srcSet={post.childMarkdownRemark.frontmatter.coverimage.childImageSharp.responsiveResolution.srcSet}
                       alt="a description" />
                   </Link>
                 </div>
@@ -52,9 +52,9 @@ export const pageQuery = graphql`
             frontmatter {
               title
               related
-              image {
+              coverimage {
                 childImageSharp {
-                  responsiveResolution(width: 283) {
+                  responsiveResolution(width: 500) {
                     src,
                     srcSet
                   }

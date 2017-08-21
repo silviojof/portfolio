@@ -1,6 +1,7 @@
 ---
 title: "Make Your Vote Up"
 image: "images/make-your-vote-up.jpg"
+coverimage: "images/second.jpg"
 tags: ["HTML", "CSS", "PHP", "MySql", "SAAS"]
 related: ["UX", "UI", "Development"]
 live: "http://www.silviojoliveira.com/make-your-vote-up"

@@ -14,12 +14,12 @@ export default function Template({
       <Helmet title={`Work - ${post.frontmatter.title}`} />
       <Row className="work-box">
         <Col xs={12}>
+          <h4>{post.frontmatter.title}</h4>
           <img
             src={post.frontmatter.image.childImageSharp.responsiveResolution.src}
             srcSet={post.frontmatter.image.childImageSharp.responsiveResolution.srcSet}
             alt="a description"
           />
-          <h4>{post.frontmatter.title}</h4>
           <div className="work-box-content" dangerouslySetInnerHTML={{ __html: post.html }} />
           <h4>Related Services</h4>
           <ul>
@@ -57,7 +57,7 @@ export const pageQuery = graphql`
           live
           image {
             childImageSharp {
-              responsiveResolution(width: 800) {
+              responsiveResolution(width: 1400) {
                 src,
                 srcSet
               }

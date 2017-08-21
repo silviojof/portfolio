@@ -1,6 +1,7 @@
 ---
 title: "Yoshi Hair"
 image: "images/yoshi.jpg"
+coverimage: "images/second.jpg"
 tags: ["HTML", "CSS", "PHP", "MySql", "SAAS"]
 related: ["UX", "UI", "Development"]
 live: "http://www.silviojoliveira.com/yoshi"
