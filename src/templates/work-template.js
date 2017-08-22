@@ -38,7 +38,7 @@ export default function Template({
           }
           </ul>
           <h4>Live Project</h4>
-          <p><a href={post.frontmatter.live} target="_blank">{post.frontmatter.live.replace(/(^\w+:|^)\/\//, '')}</a></p>
+          <p style={{'marginBottom': '2rem'}}><a href={post.frontmatter.live} target="_blank">{post.frontmatter.live.replace(/(^\w+:|^)\/\//, '')}</a></p>
 
         </Col>
       </Row>

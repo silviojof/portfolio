@@ -16,29 +16,33 @@ class Nav extends Component {
     }
   }
 
-  render() {
-    let regex = /\/(.*?)\//g;
+  componentDidMount() {
+    console.log(location);
     let str = location.pathname;
-    let match = 'home';
+    let regex = /\/(.*?)\//g;
+    this.match = 'home';
     if(str.length > 1) {
       if(str === "/works") {
         str = "/works/";
       }
-      match = regex.exec(str)[1];
+      this.match = regex.exec(str)[1];
     }
+  }
 
+  render() {
+    const matchVar = this.match;
     return (
       <div className="main-nav">
-        <Link className={this.getClass(match, 'home')} to="/">home</Link>
-        <Link className={this.getClass(match, 'works')} to="/works/">works</Link>
-        <Link className={this.getClass(match, 'contact')} to="/contact/">contact</Link>
+        <Link className={this.getClass(matchVar, 'home')} to="/">home</Link>
+        <Link className={this.getClass(matchVar, 'works')} to="/works/">works</Link>
+        <Link className={this.getClass(matchVar, 'contact')} to="/contact/">contact</Link>
       </div>
     );
   }
 }
 
 Nav.propTypes = {
-  location: React.PropTypes.object,
+  location: PropTypes.object,
 };
 
 export default Nav
