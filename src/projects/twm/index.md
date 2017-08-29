@@ -2,10 +2,10 @@
 title: "TWM"
 image: "images/twm.jpg"
 coverimage: "images/second.jpg"
-tags: ["HTML", "CSS", "PHP", "MySql", "SAAS"]
-related: ["UX", "UI", "Development"]
+tags: ["HTML", "CSS", "PHP", "SAAS", "Javascript"]
+related: ["UX/UI", "Branding", "Development"]
 live: "http://www.trustworthymusic.com"
 
 ---
 
-Nulla dapibus, lacus ut sodales faucibus, lorem quam aliquam purus, id gravida odio ligula ac augue. Nulla dapibus, lacus ut sodales faucibus, lorem quam aliquam purus, id gravida odio ligula ac augue. Nulla dapibus, lacus ut sodales faucibus, lorem quam aliquam purus, id gravida odio ligula ac augue.
+Trustworthy Music is DJ company based in Minnesota, USA, that provides DJ services to weddings, corporate parties, schools dances and graduation parties. They looked for me to do their re-branding and update their website originally developed in 2008. The new website should be responsive and SEO-Friendly.

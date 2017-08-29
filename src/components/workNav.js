@@ -21,8 +21,8 @@ export default class WorkNav extends Component {
     var prev, next;
     if(this.props.navigation) {
       let navigation = this.props.navigation
-      prev = navigation.prev.relativePath.replace(/\/.*/g, '')
-      next = navigation.next.relativePath.replace(/\/.*/g, '')
+      prev = 'works/' + navigation.prev.relativePath.replace(/\/.*/g, '')
+      next = 'works/' + navigation.next.relativePath.replace(/\/.*/g, '')
     }
     return (
       <div>

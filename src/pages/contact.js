@@ -4,7 +4,7 @@ import ContactForm from '../components/contactForm'
 import { Container, Row, Col, Visible, Hidden, ScreenClassRender } from 'react-grid-system'
 
 const ContactPage = () => (
-  <Container>
+  <Container style={{marginBottom: "3rem"}}>
     <Row>
       <Col sm={12} md={12} lg={10}>
         <h1>Say Hello</h1>

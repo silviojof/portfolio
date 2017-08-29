@@ -13,11 +13,11 @@ const Header = () => (
     <div className="header-text">
       <Link to="/"><img className="caricature" src={Men} alt="just a man" /></Link>
       <h1>Silvio Oliveira</h1>
-      <p><strong>Web Developer</strong></p>
+      <p><strong>Front End Developer</strong></p>
       <p>Vancouver, BC</p>
       <Nav />
       <nav className="social-media">
-        <Link to="http://github.com">github</Link>  /  <Link to="http://github.com">linkedin</Link>  /    <Link to="http://github.com">twitter</Link>
+        <a href="https://github.com/silviojof" target="_blank">github</a>  /  <a href="https://www.linkedin.com/in/silvio-oliveira-5b574112/" target="_blank">linkedin</a>  /    <a href="https://www/twitter.com/silviojof" target="_blank">twitter</a>
       </nav>
     </div>
   </div>
@@ -34,16 +34,15 @@ const TemplateWrapper = ({
 }) => (
     <div className="root">
       <Helmet
-        title="Gatsby Default Starter"
+        title="Silvio Oliveira - Web Developer"
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: 'description', content: 'Silvio Oliveira Portfolio Website.' },
+          { name: 'keywords', content: 'javascript, frontend developer, react, web-development' },
         ]}
       />
       <Header />
       <Container>
         <Row>
-          <Col xs={12}><div className="language">EN/PT</div></Col>
           {children()}
         </Row>
       </Container>
