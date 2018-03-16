@@ -7,7 +7,6 @@ export default function Template({
   data, pathContext
 }) {
   const post = data.file.childMarkdownRemark
-  //console.log(pathContext)
   return (
     <Container>
       <WorkNav navigation={pathContext} show="true" />

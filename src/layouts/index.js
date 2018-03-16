@@ -14,7 +14,8 @@ const Header = () => (
       <Link to="/"><img className="caricature" src={Men} alt="just a man" /></Link>
       <h1>Silvio Oliveira</h1>
       <p><strong>Front End Developer</strong></p>
-      <p>Vancouver, BC</p>
+      <p>Goiânia, Brazil</p>
+      <p>Vancouver, Canada</p>
       <Nav />
       <nav className="social-media">
         <a href="https://github.com/silviojof" target="_blank">github</a>  /  <a href="https://www.linkedin.com/in/silvio-oliveira-5b574112/" target="_blank">linkedin</a>  /    <a href="https://www/twitter.com/silviojof" target="_blank">twitter</a>
@@ -25,7 +26,7 @@ const Header = () => (
 
 const Footer = () => (
   <div className="footer">
-    <p>&copy; Silvio Oliveira. This site was built with <Link to="https://www.gatsbyjs.org/">GatsbyJS</Link>. Look at the <Link to="https://www.github.com/silviojof/porfolio">source code</Link> to see the Javascript and React that actually build the static website.</p>
+    <p>&copy; Silvio Oliveira. This site was built with <a href="https://www.gatsbyjs.org/">GatsbyJS</a>. Look at the <a href="https://www.github.com/silviojof/portfolio">source code</a> to see the Javascript and React that actually build the static website.</p>
   </div>
 )
 

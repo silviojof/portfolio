@@ -4,7 +4,7 @@ image: "images/yoshi.jpg"
 coverimage: "images/second.jpg"
 tags: ["HTML", "CSS", "PHP", "MySql", "SAAS", "jQuery"]
 related: ["UX/UI", "Branding", "Development"]
-live: "http://www.silviojoliveira.com/yoshi"
+live: "http://yoshi.silviojoliveira.com"
 
 ---
 

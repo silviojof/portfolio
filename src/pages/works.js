@@ -10,7 +10,7 @@ export default function Works({
 }) {
   const { edges: posts } = data.allFile;
   return (
-    <Container>
+    <Container style={{ marginBottom: '60px'}}>
       <Row>
         <Col xs={12}>
         <WorkNav show="false" />

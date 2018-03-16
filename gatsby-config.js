@@ -20,6 +20,12 @@ module.exports = {
         plugins: [] // just in case those previously mentioned remark plugins sound cool :)
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-105669949-1',
+      },
+    },
     `gatsby-transformer-sharp`,
   ],
 }

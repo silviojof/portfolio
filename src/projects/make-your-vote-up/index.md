@@ -4,7 +4,7 @@ image: "images/make-your-vote-up.jpg"
 coverimage: "images/second.jpg"
 tags: ["Agile", "HTML", "CSS", "jQuery", "AJAX", "SAAS", "Data Visualization"]
 related: ["Branding", "UX", "Development"]
-live: "http://www.silviojoliveira.com/make-your-vote-up"
+live: "http://makeyourvoteup.silviojoliveira.com"
 
 ---
 
